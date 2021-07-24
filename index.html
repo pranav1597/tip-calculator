@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+
+  
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo" class="logo">
+    </div>
+
+
+    <div class="calculator-base">
+
+      <div class="calculator-section">
+
+        <div class="calculator-flex">
+          <!-- bill section -->
+          <div class="bill-section">
+            <label for="bill-input" class="heading bill-heading">Bill
+              <input type="text" id="bill-input" class="bill-input" name="bill-input" dir="rtl" placeholder="0">
+            </label>
+          
+          </div>
+          <!-- select tip section -->
+          <div class="select-tip">
+            <label for="" class="heading tip-heading">Select Tip %</label>
+            <div class="tip-grid">
+              <button data-percent class="btn">5%</button>
+              <button data-percent class="btn">10%</button>
+              <button data-percent class="btn btn-active">15%</button>
+              <button data-percent class="btn">25%</button>
+              <button data-percent class="btn">50%</button>
+              <input type="text" placeholder="Custom" class="custom" id="custom">
+            </div>
+          </div>
+          <!-- no of people section -->
+          <div class="num-of-people">
+          
+            <label for="people-input" class="heading people-heading">Number of people
+            <input type="text" id="people-input" class="people-input" name="people-input" dir="rtl" placeholder="1">
+          </label>
+          
+          </div>
+        </div>
+
+        <div class="calculator-flex">
+          <!-- tip base -->
+          <div class="tip-base">
+            <div class="tip-amount">
+              <div class="amount-flex">
+                <div class="heading">Tip Amount</div>
+                <div class="per-person">/ person</div>
+              </div>
+              <div data-tip-screen class="tip-amount-screen"></div>
+            </div>
+            <div class="total-amount">
+              <div class="total-flex">
+                <div class="heading">Total</div>
+                <div class="per-person">/ person</div>
+              </div>
+              <div data-total-screen class="total-amount-screen"></div>
+            </div>
+            <div class="reset">
+              <button id="reset-btn" class="reset-btn">Reset</button>
+            </div>
+          </div>
+        </div>
+
+      </div>     
+
+    </div>  
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br> 
+      Coded by <a href="https://github.com/pranav1597/tip-calculator">Pranav</a>.
+    </div>
+
+  </div>
+
+  
+  
+</body>
+</html>
