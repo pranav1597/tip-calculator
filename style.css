@@ -281,6 +281,14 @@ body{
         margin-top: .5em;
     }
 
+    .tip-amount,.total-amount{
+        padding: 10px 25px;
+    }
+
+    .tip-amount{
+        padding-top: 1em;
+    }
+
     .reset{
         margin-top: 5em;
     }
